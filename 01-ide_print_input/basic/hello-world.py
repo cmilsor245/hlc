@@ -7,7 +7,7 @@
   @info: first "hello world"
 """
 
-# TODO: (WSL command to execute) -> python3 ./01-ide_print_input/hello-world.py
+# TODO: (WSL command to execute) -> python3 ./01-ide_print_input/basic/hello-world.py
 
 """ ------------- """
 

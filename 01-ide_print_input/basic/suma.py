@@ -7,7 +7,7 @@
   @info: operación básica
 """
 
-# TODO: (WSL command to execute) -> python3 ./01-ide_print_input/suma.py
+# TODO: (WSL command to execute) -> python3 ./01-ide_print_input/basic/suma.py
 
 """ ------------- """
 

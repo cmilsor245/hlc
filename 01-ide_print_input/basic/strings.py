@@ -7,7 +7,7 @@
   @info: strings concatenation
 """
 
-# TODO: (WSL command to execute) -> python3 ./01-ide_print_input/strings.py
+# TODO: (WSL command to execute) -> python3 ./01-ide_print_input/basic/strings.py
 
 """ ------------- """
 
