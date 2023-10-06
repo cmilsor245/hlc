@@ -4,7 +4,7 @@
   @created: 02/10/2023
   @license: MIT
   @contact: christiaanmillaan1313@gmail.com
-  @info: ejercicio 3 - programa que imprime una expresión específica
+  @info: programa que imprime una expresión específica
 """
 
 # TODO: (WSL command to execute) -> python3 ./01-ide_print_input/ejercicios/ej3/main.py

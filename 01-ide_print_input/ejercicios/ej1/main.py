@@ -4,7 +4,7 @@
   @created: 02/10/2023
   @license: MIT
   @contact: christiaanmillaan1313@gmail.com
-  @info: ejercicio 1 - programa que imprime un mensaje mediante el uso de un único "print"
+  @info: programa que imprime un mensaje mediante el uso de un único "print"
 """
 
 # TODO: (WSL command to execute) -> python3 ./01-ide_print_input/ejercicios/ej1/main.py
