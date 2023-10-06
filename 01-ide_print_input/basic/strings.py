@@ -12,7 +12,7 @@
 """ ------------- """
 
 # method 1
-print("hello " + "world");
+print ("hello " + "world");
 
 # method 2
-print("hello", "world"); # no hace falta el espacio
+print ("hello", "world"); # no hace falta el espacio

@@ -17,10 +17,10 @@ numero_asociado = 399058;
 """ ---------------------------------------- """
 
 # method 1
-print("Estimado/a " + nombre_asociado + ", su número de asociado es: " + str(numero_asociado)); # hace falta convertir a string la variable "numero_asociado"
+print ("Estimado/a " + nombre_asociado + ", su número de asociado es: " + str (numero_asociado)); # hace falta convertir a string la variable "numero_asociado"
 
 # method 2
-print("Estimado/a {}, su número de asociado es: {}".format(nombre_asociado, numero_asociado));
+print ("Estimado/a {}, su número de asociado es: {}".format(nombre_asociado, numero_asociado));
 
 # method 3
-print(f"Estimado/a {nombre_asociado}, su número de asociado es: {numero_asociado}");
+print (f"Estimado/a {nombre_asociado}, su número de asociado es: {numero_asociado}");

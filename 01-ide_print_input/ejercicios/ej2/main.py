@@ -11,4 +11,4 @@
 
 """ ------------- """
 
-print("1. A  B  C\n2. D  E  F\n3. G  H  I");
+print ("1. A  B  C\n2. D  E  F\n3. G  H  I");

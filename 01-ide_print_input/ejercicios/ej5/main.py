@@ -11,7 +11,7 @@
 
 """ ------------- """
 
-name = input("1. Escribe tu nombre: ");
-last_name = input("2. Escribe tu apellido: ");
+name = input ("1. Escribe tu nombre: ");
+last_name = input ("2. Escribe tu apellido: ");
 
-print(name + " " + last_name);
+print (name + " " + last_name);
