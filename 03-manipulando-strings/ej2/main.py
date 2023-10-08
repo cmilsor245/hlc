@@ -35,3 +35,10 @@ print(frase [0:8]);
 frase = "Nunca confíes en un ordenador que no puedas lanzar por una ventana";
 
 print(frase [8::]);
+
+""" -------------------------- """
+
+# invierte la posición de todos los caracteres de ls siguientes frase y muestra el resultado por pantalla: "Es genial trabajar con ordenadores. No discuten, lo recuerdan todo y no se beben tu cerveza"
+frase = "Es genial trabajar con ordenadores. No discuten, lo recuerdan todo y no se beben tu cerveza";
+
+print(frase [::-1]);
