@@ -11,10 +11,10 @@
 
 """ ------------- """
 
-nombre = input ("Por favor, dime tu nombre: ") or "Christian"; # el "or" sirve como placeholder, si no se introduce un nombre, se utiliza el valor por defecto
-ventas_totales = input ("Por favor, dime tus ventas totales del mes: ");
+nombre = input("Por favor, dime tu nombre: ") or "Christian"; # el "or" sirve como placeholder, si no se introduce un nombre, se utiliza el valor por defecto
+ventas_totales = input("Por favor, dime tus ventas totales del mes: ");
 
-ventas_totales = float (ventas_totales);
-comisiones = round (ventas_totales * 0.13, 2);
+ventas_totales = float(ventas_totales);
+comisiones = round(ventas_totales * 0.13, 2);
 
-print (f"Hola {nombre}, tus comisiones son: {comisiones}");
+print(f"Hola {nombre}, tus comisiones son: {comisiones}");

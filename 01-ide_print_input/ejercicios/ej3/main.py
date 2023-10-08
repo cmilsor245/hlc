@@ -11,4 +11,4 @@
 
 """ ------------- """
 
-print ("1. Barra Normal: /\n2. Barra Invertida: \\");
+print("1. Barra Normal: /\n2. Barra Invertida: \\");
