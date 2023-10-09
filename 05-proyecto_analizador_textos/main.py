@@ -15,10 +15,14 @@
 def contar_letras(letra, texto):
   return texto.count(letra)
 
+""" -------------------------------------- """
+
 # función para contar la cantidad de palabras en el texto
 def contar_palabras(texto):
   palabras = texto.split()
   return len(palabras)
+
+""" -------------------------------------- """
 
 # función para encontrar la letra inicial y final en el texto
 def encontrar_letras_inicio_fin(texto):
@@ -30,26 +34,36 @@ def encontrar_letras_inicio_fin(texto):
   else:
     return None, None
 
+""" -------------------------------------- """
+
 # función para invertir el texto
 def invertir_texto(texto):
   return texto[::-1]
 
+""" -------------------------------------- """
+
 # función para buscar una palabra en el texto usando un diccionario
 def buscar_palabra(texto, palabra):
   palabras = texto.split()
-  palabra = palabra.lower()  # Convertir la palabra a minúsculas para una búsqueda insensible a mayúsculas
+  palabra = palabra.lower()  # convertir la palabra a minúsculas para una búsqueda insensible a mayúsculas
   return palabra in [p.lower() for p in palabras]
+
+""" ----------------------------------------------------------------- """
 
 # ingreso de texto
 texto = input("Ingresa un texto a elección: ")
-texto = texto.lower()  # Convertir el texto a minúsculas
+texto = texto.lower()  # convertir el texto a minúsculas
+
+""" ------------------------------- """
 
 # ingreso de letras
 letra1 = input("Ingresa la primera letra: ").lower()
 letra2 = input("Ingresa la segunda letra: ").lower()
 letra3 = input("Ingresa la tercera letra: ").lower()
 
-# Contar la cantidad de letras
+""" ------------------------------- """
+
+# contar la cantidad de letras
 cantidad_letra1 = contar_letras(letra1, texto)
 cantidad_letra2 = contar_letras(letra2, texto)
 cantidad_letra3 = contar_letras(letra3, texto)
@@ -59,20 +73,28 @@ print(f'Hemos encontrado la letra \'{letra1}\' repetida {cantidad_letra1} veces'
 print(f'Hemos encontrado la letra \'{letra2}\' repetida {cantidad_letra2} veces')
 print(f'Hemos encontrado la letra \'{letra3}\' repetida {cantidad_letra3} veces')
 
+""" ------------------------------- """
+
 # contar la cantidad de palabras
 cantidad_palabras = contar_palabras(texto)
 print("\nCANTIDAD DE PALABRAS")
 print(f'Hemos encontrado {cantidad_palabras} palabras en tu texto')
+
+""" ------------------------------- """
 
 # encontrar la letra inicial y final
 letra_inicial, letra_final = encontrar_letras_inicio_fin(texto)
 print("\nLETRAS DE INICIO Y DE FIN")
 print(f'La letra inicial es \'{letra_inicial}\' y la letra final es \'{letra_final}\'')
 
+""" ------------------------------- """
+
 # invertir el texto
 texto_invertido = invertir_texto(texto)
 print("\nTEXTO INVERTIDO")
 print(f'Si ordenamos tu texto al revés va a decir: \'{texto_invertido}\'')
+
+""" ------------------------------- """
 
 # buscar la palabra "Python" en el texto
 palabra_a_buscar = "Python"
