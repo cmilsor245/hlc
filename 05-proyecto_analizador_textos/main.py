@@ -19,26 +19,36 @@ def contar_letras(letra, texto):
 
 # función para contar la cantidad de palabras en el texto
 def contar_palabras(texto):
-  palabras = texto.split()
+  palabras = texto.split() # separar el texto en palabras separadas por espacios y almacenarlas en un array
   return len(palabras)
 
 """ -------------------------------------- """
 
 # función para encontrar la letra inicial y final en el texto
+# función para encontrar la letra inicial y final en el texto
 def encontrar_letras_inicio_fin(texto):
+  # Quita espacios en blanco del texto
   texto = texto.strip()
+  
+  # si el texto no está vacío, encuentra la letra inicial y final
   if texto:
-    letra_inicial = texto[0]
-    letra_final = texto[-1]
+    letra_inicial = texto[0]  # encuentra la letra inicial
+    letra_final = texto[-1]  # encuentra la letra final
     return letra_inicial, letra_final
+
+  # si el texto está vacío, devuelve None para ambas letras
   else:
-    return None, None
+    letra_inicial = None  # no hay letra inicial
+    letra_final = None  # no hay letra final
+    return letra_inicial, letra_final
 
 """ -------------------------------------- """
 
 # función para invertir el texto
 def invertir_texto(texto):
-  return texto[::-1]
+  # invierte el texto usando slicing
+  texto_invertido = texto[::-1]
+  return texto_invertido
 
 """ -------------------------------------- """
 
