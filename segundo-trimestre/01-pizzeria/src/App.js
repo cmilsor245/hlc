@@ -1,7 +1,14 @@
-function App() {
+import React from 'react';
+import { Footer } from './Footer';
+import { Menu } from './Menu';
+import { Header } from './Header';
+
+export function App() {
   return (
-    <h1>test</h1>
+    <div>
+      <Header />
+      <Menu />
+      <Footer />
+    </div>
   );
 }
-
-export default App;
