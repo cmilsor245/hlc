@@ -1,0 +1,15 @@
+import React from 'react';
+import { SKILLS } from '.';
+import { Skill } from './Skill';
+
+
+export function SkillList() {
+  return (
+    <div className='skill-list'>
+      {SKILLS.length > 0 ?
+        SKILLS.map((item_skill) => <Skill objeto_skill={item_skill} key = {item_skill.skill} />)
+        :
+        <p>No hay skills disponibles.</p>}
+    </div>
+  );
+}
