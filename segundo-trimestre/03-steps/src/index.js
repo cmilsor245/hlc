@@ -43,15 +43,16 @@ function App() {
               <Button
                 style = {{ backgroundColor: '#7950f2', color: '#fff' }}
                 onClick = {handlePrevious}
-                text = 'previous'
-                emoji = '🤪'
-              />
+              >
+                <span>🤪</span> previous
+              </Button>
+
               <Button
                 style = {{ backgroundColor: '#7950f2', color: '#fff' }}
                 onClick = {handleNext}
-                text = 'next'
-                emoji = '😎'
-              />
+              >
+                <span>😎</span> next
+              </Button>
             </div>
           </div>
         </>
@@ -60,10 +61,10 @@ function App() {
   )
 }
 
-function Button({ style, onClick, text, emoji }) {
+function Button({ style, onClick, children }) {
   return (
     <button style = {style} onClick = {onClick}>
-      {emoji} {text}
+      {children}
     </button>
   )
 }
