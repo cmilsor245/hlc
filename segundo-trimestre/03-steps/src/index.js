@@ -26,30 +26,34 @@ function App() {
 
   return (
     <>
-      <button className = 'close' onClick = {handleOpen}>
+      <button className = 'close' onClick = { handleOpen }>
         &times;
       </button>
-      {IS_OPEN && (
+      { IS_OPEN && (
         <>
-          {/* <div className = {IS_OPEN ? 'steps' : 'ocultar'} */}
+          { /* <div className = { IS_OPEN ? 'steps' : 'ocultar' } */ }
           <div className = 'steps'>
             <div className = 'numbers'>
-              <div className = {`${STEP >= 1 ? 'active' : ''}`}>1</div>
-              <div className = {`${STEP >= 2 ? 'active' : ''}`}>2</div>
-              <div className = {`${STEP >= 3 ? 'active' : ''}`}>3</div>
+              <div className = { `${ STEP >= 1 ? 'active' : '' }` }>1</div>
+              <div className = { `${ STEP >= 2 ? 'active' : '' }` }>2</div>
+              <div className = { `${ STEP >= 3 ? 'active' : '' }` }>3</div>
             </div>
-            <p className = 'message'>{DATA[STEP - 1]}</p>
+
+            <StepMessage classStep = { 'message' }>
+              { DATA[STEP - 1] }
+            </StepMessage>
+
             <div className = 'buttons'>
               <Button
                 style = {{ backgroundColor: '#7950f2', color: '#fff' }}
-                onClick = {handlePrevious}
+                onClick = { handlePrevious }
               >
                 <span>🤪</span> previous
               </Button>
 
               <Button
                 style = {{ backgroundColor: '#7950f2', color: '#fff' }}
-                onClick = {handleNext}
+                onClick = { handleNext }
               >
                 <span>😎</span> next
               </Button>
@@ -63,9 +67,15 @@ function App() {
 
 function Button({ style, onClick, children }) {
   return (
-    <button style = {style} onClick = {onClick}>
-      {children}
+    <button style = { style } onClick = { onClick }>
+      { children }
     </button>
+  )
+}
+
+function StepMessage({ classStep, children }) {
+  return (
+    <p className = { classStep }>{ children }</p>
   )
 }
 
