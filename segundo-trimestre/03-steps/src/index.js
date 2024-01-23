@@ -40,17 +40,31 @@ function App() {
             </div>
             <p className = 'message'>{DATA[STEP - 1]}</p>
             <div className = 'buttons'>
-              <button style = {{ backgroundColor: '#7950f2', color: '#fff' }} onClick = {handlePrevious}>
-                previous
-              </button>
-              <button style = {{ backgroundColor: '#7950f2', color: '#fff' }} onClick = {handleNext}>
-                next
-              </button>
+              <Button
+                style = {{ backgroundColor: '#7950f2', color: '#fff' }}
+                onClick = {handlePrevious}
+                text = 'previous'
+                emoji = '🤪'
+              />
+              <Button
+                style = {{ backgroundColor: '#7950f2', color: '#fff' }}
+                onClick = {handleNext}
+                text = 'next'
+                emoji = '😎'
+              />
             </div>
           </div>
         </>
       )}
     </>
+  )
+}
+
+function Button({ style, onClick, text, emoji }) {
+  return (
+    <button style = {style} onClick = {onClick}>
+      {emoji} {text}
+    </button>
   )
 }
 
